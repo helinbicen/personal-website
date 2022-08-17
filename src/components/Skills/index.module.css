@@ -36,6 +36,7 @@
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
+  /* background-color: pink; */
   /* background-color: brown; */
   text-align: start;
   line-height: 2rem;
@@ -48,6 +49,7 @@
   text-align: start;
   font-size: 1.2rem;
   line-height: 1.5rem;
+  /* background-color: pink; */
   /* background-color: green; */
   width: 100%;
 }
