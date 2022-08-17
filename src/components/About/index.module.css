@@ -1,0 +1,285 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 64px; */
+  /* background-color: blue; */
+  position: relative;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 100vh;
+  /* background-color: #282828; */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0 2rem;
+  padding: 2rem;
+  
+}
+
+.aboutMe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  /* background-color: yellow; */
+  height: 510px;
+  gap: 1rem;
+}
+
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  /* background-color: red; */
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  /* margin-bottom: 1rem; */
+}
+
+.aboutDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  /* background-color: brown; */
+  /* margin-bottom: 1rem; */
+}
+
+.getResume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  background-color: #0a192f;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.getResume:hover {
+  transform: scale(1.1);
+}
+
+.photoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  
+ 
+  height: 510px; 
+  flex: 1;
+  /* background-color: pink; */
+}
+
+
+
+.photoContainer > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 270px;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+
+.photoContainer > img:hover {
+  transform: scale(1.2);
+}
+
+.lineOne {
+  position: relative;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  width: 323px;
+  border: 3px solid #f8f41a;
+  background-color: #f8f41a;
+  transform: rotate(90.19deg);
+  left: 200px;
+  bottom: 140px;
+}
+
+.lineTwo {
+  position: relative;
+  border-radius: 3px;
+  border-bottom: 1px solid black;
+  width: 323px;
+  border: 3px solid #f8f41a;
+  background-color: #f8f41a;
+  top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContainer {
+    width: 100%;
+    height: 100vh;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .aboutHeader {
+    font-size: 2.5rem;
+  }
+
+  .aboutDescription {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .getResume {
+    font-size: 1.5rem;
+  }
+
+  .lineTwo {
+   
+    top: 30px;
+  }
+
+  .lineOne {
+   
+  left: 180px;
+   bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .lineTwo {
+   
+    top: 30px;
+  }
+
+  .lineOne {
+   
+  left: 180px;
+   bottom: 130px;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    /* height: 100%; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .aboutMe {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .aboutHeader {
+    font-size: 1.5rem;
+  }
+
+  .aboutDescription {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: start;
+  }
+
+  .getResume {
+    width: 150px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
+
+  .photoContainer {
+    height: max-content;
+  }
+
+  .photo {
+    /* width: 20%; */
+  }
+
+  .photoContainer > img {
+    width: 200px;
+height: 200px;
+  }
+
+  .lineTwo {
+    width: 250px;
+    top: 30px;
+  }
+
+  .lineOne {
+    width: 250px;
+    left: 130px;
+   bottom: 100px;
+  }
+}
