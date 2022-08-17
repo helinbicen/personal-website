@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* margin-top: 64px; */
   /* background-color: blue; */
   position: relative;
@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   /* background-color: #282828; */
 }
 
@@ -28,7 +28,6 @@
   /* background-color: aqua; */
   margin: 0 2rem;
   padding: 2rem;
-  
 }
 
 .aboutMe {
@@ -91,14 +90,11 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  
- 
-  height: 510px; 
+
+  height: 510px;
   flex: 1;
   /* background-color: pink; */
 }
-
-
 
 .photoContainer > img {
   display: flex;
@@ -136,12 +132,21 @@
   top: 50px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) { 
   .aboutContainer {
-    width: 100%;
     height: 100vh;
   }
 
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    margin-bottom: 3rem;
+  }
+  .aboutContainer {
+    width: 100%;
+    /* height: 100vh; */
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -160,7 +165,7 @@
 
   .aboutContainer {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .content {
@@ -182,21 +187,19 @@
   }
 
   .lineTwo {
-   
     top: 30px;
   }
 
   .lineOne {
-   
-  left: 180px;
-   bottom: 130px;
+    left: 180px;
+    bottom: 130px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .aboutContainer {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .content {
@@ -204,16 +207,13 @@
   }
 
   .lineTwo {
-   
     top: 30px;
   }
 
   .lineOne {
-   
-  left: 180px;
-   bottom: 130px;
+    left: 180px;
+    bottom: 130px;
   }
-  
 }
 
 @media screen and (max-width: 576px) {
@@ -229,7 +229,7 @@
     /* height: 100%; */
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .content {
@@ -240,7 +240,7 @@
 
   .aboutMe {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .aboutHeader {
@@ -250,7 +250,9 @@
   .aboutDescription {
     font-size: 1rem;
     line-height: 1.2rem;
-    text-align: start;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
   }
 
   .getResume {
@@ -263,13 +265,9 @@
     height: max-content;
   }
 
-  .photo {
-    /* width: 20%; */
-  }
-
   .photoContainer > img {
     width: 200px;
-height: 200px;
+    height: 200px;
   }
 
   .lineTwo {
@@ -280,6 +278,6 @@ height: 200px;
   .lineOne {
     width: 250px;
     left: 130px;
-   bottom: 100px;
+    bottom: 100px;
   }
 }
