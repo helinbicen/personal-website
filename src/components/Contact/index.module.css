@@ -1,0 +1,209 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: red; */
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  /* background-color: #282828; */
+}
+
+.content {
+  display: flex;
+  /* align-items: flex-start; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0 2rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: pink; */
+  gap: 1rem;
+}
+
+.getInContact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+  /* background-color: red; */
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contactIcon:hover {
+  transform: scale(1.2);
+}
+
+.getInContact > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .contactContainer {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    margin-bottom: 3rem;
+  }
+
+  .contactContainer {
+    width: 100%;
+    /* height: 100%; */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactContainer {
+    width: 100%;
+    /* height: 100vh; */
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .header {
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .contactInfo {
+    align-items: center;
+  }
+
+  .getInContact {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .getInContact > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    width: 100%;
+    /* height: 100vh; */
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .getInContact {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .getInContact > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .contactContainer {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: max-content;
+  }
+
+  .content {
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .getInContact {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .getInContact > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

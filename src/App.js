@@ -13,6 +13,7 @@ import Momentum from "./components/Projects/Momentum";
 import ToDo from "./components/Projects/ToDo";
 import TourismAssistant from "./components/Projects/TourismAssistant";
 import Survey from "./components/Projects/Survey";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <CoinSearch />
       <Momentum />
       <ToDo />
+      <Contact />
 
     </div>
   );
