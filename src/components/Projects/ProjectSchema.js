@@ -1,17 +1,9 @@
 import styles from "./index.module.css";
 
-import { useState } from "react";
-
-import { Link } from "react-router-dom";
-
 const ProjectSchema = (props) => {
-  const [showRepo, setShowRepo] = useState(true);
+  const showButton = props.showButton;
 
-  const handleShowRepo = () => {
-    setShowRepo = !showRepo;
-  };
   return (
-    
     <div className={styles.projects}>
       <div className={styles.projectsContainer}>
         <div className={styles.content}>
@@ -32,11 +24,23 @@ const ProjectSchema = (props) => {
               <p>{props.skill4}</p>
             </div>
 
-            <button className={!showRepo ? `${styles.viewRepo} ${styles.hideRepo}` : `${styles.viewRepo}`}>
-              <a target="_blank" href={`${props.link}`}>
-                {props.buttonText}
-              </a>
-            </button>
+            {(() => {
+              if (showButton === false) {
+                return (
+                  <div className={styles.warning}>
+                    <p>This is a private project.</p>
+                  </div>
+                );
+              } else if (showButton === true) {
+                return (
+                  <button className={styles.viewRepo}>
+                    <a target="_blank" rel="noreferrer" href={`${props.link}`}>
+                      {props.buttonText}
+                    </a>
+                  </button>
+                );
+              }
+            })()}
           </div>
           <div className={styles.projectPhoto}>
             <img src={`${props.photo1}`} alt="" />

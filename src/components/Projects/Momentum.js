@@ -14,6 +14,7 @@ const Momentum = () => {
             link="https://github.com/helinbicen/momentum-clone-react"
             buttonText = "View on Github"
             photo1={momentumProject}  
+            showButton={true}
     />
     </div>
   )

@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 const Education = () => {
   return (
-    <div className={styles.education}>
+    <div className={styles.education} id="education">
       <div className={styles.educationContainer}>
         <div className={styles.content}>
           <div className={styles.university}>

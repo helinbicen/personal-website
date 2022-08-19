@@ -16,7 +16,7 @@ import CppIcon from "../../assets/skill-icons/CppIcon.png"
 
 const Skills = () => {
   return (
-    <div className={styles.skills}>
+    <div className={styles.skills} id="skills">
       <div className={styles.skillsContainer}>
         <div className={styles.content}>
           <div className={styles.header}>

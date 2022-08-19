@@ -5,7 +5,7 @@ import Wnext from "../../assets/experience/Wnext.jfif";
 
 const Experiences = () => {
   return (
-    <div className={styles.experiences}>
+    <div className={styles.experiences} id="experiences">
       <div className={styles.experiencesContainer}>
         <div className={styles.content}>
           <div className={styles.experience}>

@@ -3,7 +3,7 @@ import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.aboutContainer}>
         <div className={styles.content}>
           <div className={styles.aboutMe}>

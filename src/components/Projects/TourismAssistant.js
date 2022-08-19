@@ -3,13 +3,11 @@ import ProjectSchema from "./ProjectSchema";
 import Assistant1 from "../../assets/projects/Assistant1.jfif";
 import Assistant3 from "../../assets/projects/Assistant3.jfif";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 const TourismAssistant = () => {
-
-
   return (
-    <div>
+    <div id="projects">
       <ProjectSchema
         pageHeader="Projects"
         name="Tourism Assistant"
@@ -18,10 +16,9 @@ const TourismAssistant = () => {
         skill2="CSS"
         skill3="API"
         skill4="Figma"
-        link="https://github.com/helinbicen/crypto-currency-react"
         buttonText="This is a private project"
         photo1={Assistant3}
-      
+        showButton={false}
       />
     </div>
   );

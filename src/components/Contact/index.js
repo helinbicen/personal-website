@@ -10,7 +10,7 @@ import github from "../../assets/contact/github.svg"
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
         <div className={styles.contactContainer}>
             <div className={styles.content}>
                 <div className={styles.header}>

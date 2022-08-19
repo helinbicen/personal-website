@@ -16,6 +16,7 @@ const Survey = () => {
         link=""
         buttonText = "This is a private project"
         photo1={SurveyProject}
+        showButton={false}
        
       />
     </div>

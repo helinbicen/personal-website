@@ -14,7 +14,7 @@ const CoinSearch = () => {
             link="https://github.com/helinbicen/crypto-currency-react"
             buttonText = "View on Github"
             photo1={coinSearchProject}
-              
+            showButton={true}
           
     />
     </div>
