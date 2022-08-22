@@ -1,9 +1,10 @@
 import styles from "./index.module.css";
 
 import PersonalLogo from "../../assets/personal-logos/Logo1.png";
-import EnLogo from "../../assets/flags/UkFlag.png";
-import TrLogo from "../../assets/flags/TurkeyFlag.png";
-import dropdownIcon from "../../assets/other/dropdownIcon.svg";
+// import EnLogo from "../../assets/flags/UkFlag.png";
+// import TrLogo from "../../assets/flags/TurkeyFlag.png";
+// import dropdownIcon from "../../assets/other/dropdownIcon.svg";
+
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 import { useState } from "react";
@@ -16,18 +17,20 @@ const Navbar = () => {
   const handleNavClick = () => setNavClick(!navClick);
 
   const [sectionClick, setSectionClick] = useState(false);
- 
+  const handleSectionClick = () => setSectionClick(!sectionClick);
+
+  // const [langClick, setLangClick] = useState(false);
+  // const handleLangClick = () => setLangClick(!langClick);
 
   return (
     <BrowserRouter>
       <div className={styles.navbar}>
         <div className={styles.navbarContainer}>
           <Link to="#" smooth>
-                      <div className={styles.logo}>
-            <img src={PersonalLogo} alt="" />
-          </div>
+            <div className={styles.logo} onClick={handleSectionClick}>
+              <img src={PersonalLogo} alt="" />
+            </div>
           </Link>
-
 
           <div className={styles.sections}>
             <ul
@@ -120,24 +123,26 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <div className={styles.languageSelection}>
+              {/* Language Selection - TR / EN */}
+
+              {/* <div className={styles.languageSelection}>
                 <div className={styles.currentLanguage}>
                   <span className={styles.languageIcon}>
-                    <img src={EnLogo} alt="" />
+                    <img src={langClick ? `${TrLogo}` : `${EnLogo}`} alt="" onClick={handleLangClick}  />
                   </span>
                   <span className={styles.dropdownIcon}>
                     <img src={dropdownIcon} alt="" />
                   </span>
                 </div>
-              </div>
 
-              <div className={styles.languageDropdown}>
-                <div className={styles.languageDropdownList}>
-                  <span className={styles.languageIcon}>
-                    <img src={TrLogo} alt="" />
-                  </span>
+                <div className={styles.languageDropdown}>
+                  <div className={styles.languageDropdownList}>
+                    <span className={styles.languageIcon}>
+                      <img src={langClick ? `${EnLogo}` : `${TrLogo}`} alt="" onClick={handleLangClick}/>
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </div>  */}
             </ul>
 
             <div onClick={handleNavClick} className={styles.hamburger}>

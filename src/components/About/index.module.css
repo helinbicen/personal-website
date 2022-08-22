@@ -4,9 +4,6 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  /* height: 100vh; */
-  /* margin-top: 64px; */
-  /* background-color: blue; */
   position: relative;
 }
 
@@ -15,8 +12,6 @@
   align-items: center;
   justify-content: center;
   width: 1200px;
-  /* height: 100vh; */
-  /* background-color: #282828; */
 }
 
 .content {
@@ -25,7 +20,6 @@
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  /* background-color: aqua; */
   margin: 0 2rem;
   padding: 2rem;
 }
@@ -37,7 +31,6 @@
   flex-direction: column;
   width: 100%;
   flex: 1;
-  /* background-color: yellow; */
   height: 510px;
   gap: 1rem;
 }
@@ -47,11 +40,9 @@
   align-items: center;
   justify-content: center;
   text-align: start;
-  /* background-color: red; */
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
-  /* margin-bottom: 1rem; */
 }
 
 .aboutDescription {
@@ -61,8 +52,10 @@
   text-align: start;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  /* background-color: brown; */
-  /* margin-bottom: 1rem; */
+}
+
+a {
+  text-decoration: none;
 }
 
 .getResume {
@@ -93,7 +86,6 @@
 
   height: 510px;
   flex: 1;
-  /* background-color: pink; */
 }
 
 .photoContainer > img {
@@ -145,7 +137,6 @@
   }
   .aboutContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 }
 
@@ -165,7 +156,6 @@
 
   .aboutContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .content {
@@ -199,7 +189,6 @@
 @media screen and (max-width: 768px) {
   .aboutContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .content {
@@ -226,10 +215,8 @@
 
   .aboutContainer {
     width: 100%;
-    /* height: 100%; */
     justify-content: flex-start;
     align-items: flex-start;
-    /* height: 100vh; */
   }
 
   .content {
@@ -250,9 +237,6 @@
   .aboutDescription {
     font-size: 1rem;
     line-height: 1.2rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
   }
 
   .getResume {

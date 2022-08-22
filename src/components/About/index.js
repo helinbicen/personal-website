@@ -1,5 +1,6 @@
 import styles from "./index.module.css";
 import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
+import Resume from "../../assets/files/Helin_Bicen_Resume.pdf";
 
 const About = () => {
   return (
@@ -18,17 +19,17 @@ const About = () => {
               make things better.
             </p>
 
-            <button className={styles.getResume}>My resume</button>
+            <a href={Resume} download="Helin_Bicen_Resume">
+              <button className={styles.getResume}>My resume</button>
+            </a>
           </div>
 
-            <div className={styles.photoContainer}>
-              
-                <img src={MeAbout} alt="" />
-              
+          <div className={styles.photoContainer}>
+            <img src={MeAbout} alt="" />
 
-              <div className={styles.lineOne}></div>
-              <div className={styles.lineTwo}></div>
-            </div>
+            <div className={styles.lineOne}></div>
+            <div className={styles.lineTwo}></div>
+          </div>
         </div>
       </div>
     </div>

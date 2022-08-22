@@ -4,9 +4,6 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  /* height: 100vh; */
-  /* margin-top: 64px; */
-  /* background-color: blue; */
   position: relative;
 }
 
@@ -15,8 +12,6 @@
   align-items: center;
   justify-content: center;
   width: 1200px;
-  /* height: 100vh; */
-  /* background-color: #282828; */
 }
 
 .content {
@@ -25,7 +20,6 @@
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  /* background-color: aqua; */
   margin: 0 2rem;
   padding: 2rem;
   gap: 1rem;
@@ -37,8 +31,6 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-
-  /* background-color: yellow; */
   height: 510px;
   gap: 1rem;
 }
@@ -48,11 +40,9 @@
   align-items: center;
   justify-content: center;
   text-align: start;
-  /* background-color: red; */
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
-  /* margin-bottom: 1rem; */
 }
 
 .projectName {
@@ -60,7 +50,6 @@
   align-items: center;
   justify-content: center;
   text-align: start;
-  /* background-color: red; */
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
@@ -124,11 +113,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   width: 100%;
   height: 510px;
-
-  /* background-color: blue; */
 }
 
 .projectPhoto > img {
@@ -161,7 +147,6 @@
   }
   .projectsContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .content {
@@ -192,12 +177,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 1.5rem; */
   }
 
   .projectsContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .content {
@@ -236,7 +219,6 @@
 @media screen and (max-width: 768px) {
   .projectsContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .content {
@@ -254,16 +236,13 @@
 
   .projectsContainer {
     width: 100%;
-    /* height: 100%; */
     justify-content: flex-start;
     align-items: flex-start;
-    /* height: 100vh; */
   }
 
   .content {
     flex-direction: column;
     padding: 1rem;
-    /* gap: 3rem; */
   }
 
   .project {
@@ -282,9 +261,6 @@
   .projectDescription {
     font-size: 1rem;
     line-height: 1.2rem;
-    /* display: flex;
-      align-items: center;
-      justify-content: center; */
   }
 
   .usedSkills {
