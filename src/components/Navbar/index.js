@@ -46,7 +46,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(0)}
               >
-                <Link to="#home" smooth>
+                <Link to="#home" smooth onClick={handleNavClick}>
                   Home
                 </Link>
               </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(1)}
               >
-                <Link to="#about" smooth>
+                <Link to="#about" smooth onClick={handleNavClick}>
                   About
                 </Link>
               </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(2)}
               >
-                <Link to="#skills" smooth>
+                <Link to="#skills" smooth onClick={handleNavClick}>
                   Skills
                 </Link>
               </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(3)}
               >
-                <Link to="#experiences" smooth>
+                <Link to="#experiences" smooth onClick={handleNavClick}>
                   Experiences
                 </Link>
               </li>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(4)}
               >
-                <Link to="#education" smooth>
+                <Link to="#education" smooth onClick={handleNavClick}>
                   Education
                 </Link>
               </li>
@@ -106,7 +106,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(5)}
               >
-                <Link to="#projects" smooth>
+                <Link to="#projects" smooth onClick={handleNavClick}>
                   Projects
                 </Link>
               </li>
@@ -118,7 +118,7 @@ const Navbar = () => {
                 }
                 onClick={() => setSectionClick(6)}
               >
-                <Link to="#contact" smooth>
+                <Link to="#contact" smooth onClick={handleNavClick}> 
                   Contact
                 </Link>
               </li>
