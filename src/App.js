@@ -14,6 +14,7 @@ import ToDo from "./components/Projects/ToDo";
 import TourismAssistant from "./components/Projects/TourismAssistant";
 import Survey from "./components/Projects/Survey";
 import Contact from "./components/Contact";
+import RickAndMorty from "./components/Projects/RickAndMorty";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Education />
       <TourismAssistant />
       <Survey />
+      <RickAndMorty />
       <CoinSearch />
       <Momentum />
       <ToDo />

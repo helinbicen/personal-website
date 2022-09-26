@@ -1,7 +1,8 @@
 import styles from "./index.module.css";
 
 const ProjectSchema = (props) => {
-  const showButton = props.showButton;
+  const showRepo = props.showRepo;
+  const showWebsite = props.showWebsite;
 
   return (
     <div className={styles.projects}>
@@ -25,17 +26,35 @@ const ProjectSchema = (props) => {
             </div>
 
             {(() => {
-              if (showButton === false) {
+              if (showRepo === false) {
                 return (
                   <div className={styles.warning}>
                     <p>This is a private project.</p>
                   </div>
                 );
-              } else if (showButton === true) {
+              } else if (showRepo === true) {
                 return (
                   <button className={styles.viewRepo}>
-                    <a target="_blank" rel="noreferrer" href={`${props.link}`}>
-                      {props.buttonText}
+                    <a target="_blank" rel="noreferrer" href={`${props.repoLink}`}>
+                      {props.repoButtonText}
+                    </a>
+                  </button>
+                );
+              }
+            })()}
+
+            {(() => {
+              if (showWebsite === false) {
+                return <div></div>;
+              } else if (showWebsite === true) {
+                return (
+                  <button className={styles.viewWebsite}>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={`${props.websiteLink}`}
+                    >
+                      {props.websiteButtonText}
                     </a>
                   </button>
                 );

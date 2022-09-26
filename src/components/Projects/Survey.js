@@ -2,7 +2,6 @@ import ProjectSchema from "./ProjectSchema";
 
 import SurveyProject from "../../assets/projects/survey.png";
 
-
 const Survey = () => {
   return (
     <div>
@@ -13,11 +12,13 @@ const Survey = () => {
         skill2="CSS"
         skill3="API"
         skill4="Figma"
-        link=""
-        buttonText = "This is a private project"
+        repoLink=""
+        repoButtonText="This is a private project"
         photo1={SurveyProject}
-        showButton={false}
-       
+        showRepo={false}
+        showWebsite={true}
+        websiteButtonText="View Website"
+        websiteLink="https://wdata.ieeeiuc.com/survey"
       />
     </div>
   );

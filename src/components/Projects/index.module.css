@@ -108,6 +108,30 @@
   transform: scale(1.1);
 }
 
+.viewWebsite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  background-color: #572045;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.viewWebsite > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.viewWebsite:hover {
+  transform: scale(1.1);
+}
+
 .projectPhoto {
   display: flex;
   align-items: center;
@@ -214,6 +238,10 @@
   .viewRepo {
     font-size: 1.5rem;
   }
+
+  .viewWebsite {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -268,6 +296,12 @@
   }
 
   .viewRepo {
+    width: 150px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
+
+  .viewWebsite {
     width: 150px;
     height: 36px;
     font-size: 0.8rem;
