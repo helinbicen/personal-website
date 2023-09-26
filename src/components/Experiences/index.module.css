@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 1200px;
 }
 
@@ -109,9 +110,21 @@
   transform: scale(1.2);
 }
 
+.thyLogo {
+  width: 220px;
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.thyLogo:hover {
+  transform: scale(1.2);
+}
+
+
 @media screen and (min-width: 1200px) {
   .experiencesContainer {
-    height: 100vh;
+    height: 120vh;
   }
 }
 

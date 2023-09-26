@@ -10,11 +10,11 @@ import Experiences from "./components/Experiences";
 import Education from "./components/Education";
 import CoinSearch from "./components/Projects/CoinSearch";
 import Momentum from "./components/Projects/Momentum";
-import ToDo from "./components/Projects/ToDo";
 import TourismAssistant from "./components/Projects/TourismAssistant";
 import Survey from "./components/Projects/Survey";
 import Contact from "./components/Contact";
 import RickAndMorty from "./components/Projects/RickAndMorty";
+import LittleLemon from "./components/Projects/LittleLemon"
 
 function App() {
   return (
@@ -28,9 +28,9 @@ function App() {
       <TourismAssistant />
       <Survey />
       <RickAndMorty />
+      <LittleLemon />
       <CoinSearch />
       <Momentum />
-      <ToDo />
       <Contact />
 
     </div>
