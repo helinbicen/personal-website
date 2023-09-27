@@ -36,7 +36,7 @@ const About = () => {
                 setIsResumeDownloaded(true);
                 setTimeout(() => {
                   pushDataToDataLayer(aboutPageData);
-                }, 1000);
+                }, 2000);
               }}
             >
               <button className={styles.getResume}>My resume</button>

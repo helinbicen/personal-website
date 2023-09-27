@@ -34,6 +34,8 @@ const Contact = () => {
             <div className={styles.getInContact}>
               <a
                 href="https://goo.gl/maps/epfYjANQyikUZGYQ8"
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => {
                   setIsLinkClicked((prev) => {
                     return {
@@ -41,7 +43,9 @@ const Contact = () => {
                       location: true,
                     };
                   });
-                  pushDataToDataLayer(contactPageData);
+                  setTimeout(() => {
+                    pushDataToDataLayer(contactPageData);
+                  }, 2000);
                 }}
               >
                 {" "}
@@ -52,6 +56,8 @@ const Contact = () => {
             <div className={styles.getInContact}>
               <a
                 href="mailto:helinbicen@outlook.com"
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => {
                   setIsLinkClicked((prev) => {
                     return {
@@ -59,7 +65,9 @@ const Contact = () => {
                       mail: true,
                     };
                   });
-                  pushDataToDataLayer(contactPageData);
+                  setTimeout(() => {
+                    pushDataToDataLayer(contactPageData);
+                  }, 2000);
                 }}
               >
                 <img src={gmail} alt="" className={styles.contactIcon} />
@@ -69,6 +77,8 @@ const Contact = () => {
             <div className={styles.getInContact}>
               <a
                 href="https://www.linkedin.com/in/helinbicen/"
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => {
                   setIsLinkClicked((prev) => {
                     return {
@@ -76,7 +86,9 @@ const Contact = () => {
                       linkedin: true,
                     };
                   });
-                  pushDataToDataLayer(contactPageData);
+                  setTimeout(() => {
+                    pushDataToDataLayer(contactPageData);
+                  }, 2000);
                 }}
               >
                 <img src={linkedin} alt="" className={styles.contactIcon} />
@@ -86,6 +98,8 @@ const Contact = () => {
             <div className={styles.getInContact}>
               <a
                 href="https://github.com/helinbicen"
+                target="_blank"
+                rel="noreferrer"
                 onClick={() => {
                   setIsLinkClicked((prev) => {
                     return {
@@ -93,7 +107,9 @@ const Contact = () => {
                       github: true,
                     };
                   });
-                  pushDataToDataLayer(contactPageData);
+                  setTimeout(() => {
+                    pushDataToDataLayer(contactPageData);
+                  }, 2000);
                 }}
               >
                 <img src={github} alt="" className={styles.contactIcon} />
