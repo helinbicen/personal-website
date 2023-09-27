@@ -12,8 +12,6 @@ const About = () => {
     isResumeDownloaded: isResumeDownloaded,
   };
 
-  pushDataToDataLayer(aboutPageData);
-
   return (
     <div className={styles.about} id="about">
       <div className={styles.aboutContainer}>
@@ -33,7 +31,10 @@ const About = () => {
             <a
               href={Resume}
               download="Helin_Bicen_Resume"
-              onClick={() => setIsResumeDownloaded(true)}
+              onClick={() => {
+                setIsResumeDownloaded(true);
+                pushDataToDataLayer(aboutPageData);
+              }}
             >
               <button className={styles.getResume}>My resume</button>
             </a>
