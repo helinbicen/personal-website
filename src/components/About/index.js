@@ -1,20 +1,8 @@
 import styles from "./index.module.css";
 import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
 import Resume from "../../assets/files/Helin_Bicen_Resume.pdf";
-import { useState } from "react";
-import { pushDataToDataLayer } from "../../utils/gtm";
 
 const About = () => {
-  const [isResumeDownloaded, setIsResumeDownloaded] = useState(false);
-
-
-  const aboutData = {
-    pageType: "About",
-    isResumeDownloaded: isResumeDownloaded,
-  }
-
-  pushDataToDataLayer(aboutData);
-
   return (
     <div className={styles.about} id="about">
       <div className={styles.aboutContainer}>
@@ -31,7 +19,7 @@ const About = () => {
               make things better.
             </p>
 
-            <a href={Resume} download="Helin_Bicen_Resume" onClick={()=>setIsResumeDownloaded(true)}>
+            <a href={Resume} download="Helin_Bicen_Resume">
               <button className={styles.getResume}>My resume</button>
             </a>
           </div>
