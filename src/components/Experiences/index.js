@@ -2,14 +2,15 @@ import styles from "./index.module.css";
 
 import Ieee from "../../assets/experience/Ieee.jfif";
 import Wnext from "../../assets/experience/Wnext.jfif";
-import ThyLogo from "../../assets/experience/thyLogo.jpeg"
+import ThyLogo from "../../assets/experience/thyLogo.jpeg";
 
 const Experiences = () => {
   return (
     <div className={styles.experiences} id="experiences">
       <div className={styles.experiencesContainer}>
-      <div className={styles.content}>
+        <div className={styles.content}>
           <div className={styles.experience}>
+            <div className={styles.header}>Experiences</div>
             <div className={styles.title}>Part-Time Software Developer</div>
             <div className={styles.otherDetails}>
               <p>Turkish Airlines Technology</p>
@@ -37,7 +38,6 @@ const Experiences = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.experience}>
-            <div className={styles.header}>Experiences</div>
             <div className={styles.title}>
               Frontend Developer & UI/UX Designer
             </div>
@@ -60,7 +60,6 @@ const Experiences = () => {
             <img src={Wnext} alt="" className={styles.wnextLogo} />
           </div>
         </div>
-   
       </div>
     </div>
   );
