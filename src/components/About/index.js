@@ -8,6 +8,7 @@ const About = () => {
   const [isResumeDownloaded, setIsResumeDownloaded] = useState(false);
 
   const aboutPageData = {
+    event: "download-resume",
     page: "about",
     isResumeDownloaded: isResumeDownloaded,
   };
