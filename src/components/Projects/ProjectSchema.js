@@ -1,7 +1,12 @@
 import styles from "./index.module.css";
 import { pushDataToDataLayer } from "../../utils/gtm";
+import { useState } from "react";
 
 const ProjectSchema = (props) => {
+
+  const [repoClicked, setIsRepoClicked] = useState(false);
+  const [websiteClicked, setIsWebsiteClicked] = useState(false);
+
   const showRepo = props.showRepo;
   const showWebsite = props.showWebsite;
   const projectName = props.name;
@@ -10,8 +15,8 @@ const ProjectSchema = (props) => {
     event: "inspect-projects",
     page: "projects",
     projectName: projectName,
-    inspectedWebsite: showWebsite ? showWebsite : "no website",
-    inspectedRepo: showRepo ? showRepo : "no repo",
+    inspectedWebsite: websiteClicked,
+    inspectedRepo: repoClicked,
   };
 
   return (
@@ -50,6 +55,7 @@ const ProjectSchema = (props) => {
                       rel="noreferrer"
                       href={`${props.repoLink}`}
                       onClick={() => {
+                        setIsRepoClicked(true);
                         setTimeout(() => {
                           pushDataToDataLayer(projectsPageData);
                         }, 2000);
@@ -73,6 +79,7 @@ const ProjectSchema = (props) => {
                       rel="noreferrer"
                       href={`${props.websiteLink}`}
                       onClick={() => {
+                        setIsWebsiteClicked(true);
                         setTimeout(() => {
                           pushDataToDataLayer(projectsPageData);
                         }, 2000);
