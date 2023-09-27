@@ -33,7 +33,9 @@ const About = () => {
               download="Helin_Bicen_Resume"
               onClick={() => {
                 setIsResumeDownloaded(true);
-                pushDataToDataLayer(aboutPageData);
+                setTimeout(() => {
+                  pushDataToDataLayer(aboutPageData);
+                }, 1000);
               }}
             >
               <button className={styles.getResume}>My resume</button>
