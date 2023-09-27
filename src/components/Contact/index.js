@@ -1,7 +1,5 @@
 import styles from "./index.module.css";
 
-import { Link } from "react-router-dom";
-
 import gmail from "../../assets/contact/gmail.png";
 import linkedin from "../../assets/contact/linkedin.png";
 import location from "../../assets/contact/location.png";

@@ -1,8 +1,18 @@
 import styles from "./index.module.css";
+import { pushDataToDataLayer } from "../../utils/gtm";
 
 const ProjectSchema = (props) => {
   const showRepo = props.showRepo;
   const showWebsite = props.showWebsite;
+  const projectName = props.name;
+
+  const projectsPageData = {
+    event: "inspect-projects",
+    page: "projects",
+    projectName: projectName,
+    inspectedWebsite: showWebsite ? showWebsite : "no website",
+    inspectedRepo: showRepo ? showRepo : "no repo",
+  };
 
   return (
     <div className={styles.projects}>
@@ -35,7 +45,16 @@ const ProjectSchema = (props) => {
               } else if (showRepo === true) {
                 return (
                   <button className={styles.viewRepo}>
-                    <a target="_blank" rel="noreferrer" href={`${props.repoLink}`}>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={`${props.repoLink}`}
+                      onClick={() => {
+                        setTimeout(() => {
+                          pushDataToDataLayer(projectsPageData);
+                        }, 2000);
+                      }}
+                    >
                       {props.repoButtonText}
                     </a>
                   </button>
@@ -53,6 +72,11 @@ const ProjectSchema = (props) => {
                       target="_blank"
                       rel="noreferrer"
                       href={`${props.websiteLink}`}
+                      onClick={() => {
+                        setTimeout(() => {
+                          pushDataToDataLayer(projectsPageData);
+                        }, 2000);
+                      }}
                     >
                       {props.websiteButtonText}
                     </a>
