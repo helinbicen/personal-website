@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
 import Resume from "../../assets/files/Helin_Bicen_Resume.pdf";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { pushDataToDataLayer } from "../../utils/gtm";
 
 const About = () => {
@@ -12,19 +12,6 @@ const About = () => {
     page: "about",
     isResumeDownloaded: isResumeDownloaded,
   };
-
-  useEffect(() => {
-    const customEvent = new CustomEvent("customEvent", {
-      detail: {
-        page: "about",
-        eventData: {
-          isResumeDownloaded: isResumeDownloaded
-        },
-      },
-    });
-
-    document.dispatchEvent(customEvent);
-  }, []);
 
   return (
     <div className={styles.about} id="about">
@@ -47,6 +34,9 @@ const About = () => {
               download="Helin_Bicen_Resume"
               onClick={() => {
                 setIsResumeDownloaded(true);
+                setTimeout(() => {
+                  pushDataToDataLayer(aboutPageData);
+                }, 2000);
               }}
             >
               <button className={styles.getResume}>My resume</button>
