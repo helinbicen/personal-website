@@ -8,7 +8,16 @@ function sendCustomEventToGTM(eventName, eventData) {
   });
 }
 
-document.addEventListener("customEvent", (event) => {
-  // Gelen event'i dinleyerek GTM'e veri gönder
-  sendCustomEventToGTM(event.detail.eventName, event.detail.eventData);
-});
+function setupEventListener(eventName) {
+  document.addEventListener(eventName, (event) => {
+    // Gelen event'i dinleyerek GTM'e veri gönder
+    sendCustomEventToGTM(eventName, event.detail.eventData);
+  });
+}
+
+const customEventName = 'click-contact-links';
+
+// Event listener'ı ayarla
+setupEventListener(customEventName);
+
+
