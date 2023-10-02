@@ -19,3 +19,4 @@ const contactClickEventName = "click-contact-links";
 const resumeClickEventName = "get_resume";
 
 setupEventListener(contactClickEventName);
+setupEventListener(resumeClickEventName);
