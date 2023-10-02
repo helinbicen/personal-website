@@ -5,7 +5,7 @@ import linkedin from "../../assets/contact/linkedin.png";
 import location from "../../assets/contact/location.png";
 import github from "../../assets/contact/github.svg";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { pushDataToDataLayer } from "../../utils/gtm";
 
 const Contact = () => {
@@ -21,6 +21,19 @@ const Contact = () => {
     page: "contact",
     controlLinkClicks: isLinkClicked,
   };
+
+  useEffect(() => {
+    const customEvent = new CustomEvent("customEvent", {
+      detail: {
+        eventName: "contact-link-click",
+        page: "contact",
+        eventData: isLinkClicked,
+      },
+    });
+
+    // Otomatik olarak eventi tetikle
+    document.dispatchEvent(customEvent);
+  }, []);
 
   return (
     <div className={styles.contact} id="contact">
@@ -41,9 +54,6 @@ const Contact = () => {
                       location: true,
                     };
                   });
-                  setTimeout(() => {
-                    pushDataToDataLayer(contactPageData);
-                  }, 2000);
                 }}
               >
                 {" "}
@@ -63,9 +73,6 @@ const Contact = () => {
                       mail: true,
                     };
                   });
-                  setTimeout(() => {
-                    pushDataToDataLayer(contactPageData);
-                  }, 2000);
                 }}
               >
                 <img src={gmail} alt="" className={styles.contactIcon} />
@@ -84,9 +91,6 @@ const Contact = () => {
                       linkedin: true,
                     };
                   });
-                  setTimeout(() => {
-                    pushDataToDataLayer(contactPageData);
-                  }, 2000);
                 }}
               >
                 <img src={linkedin} alt="" className={styles.contactIcon} />
@@ -105,9 +109,6 @@ const Contact = () => {
                       github: true,
                     };
                   });
-                  setTimeout(() => {
-                    pushDataToDataLayer(contactPageData);
-                  }, 2000);
                 }}
               >
                 <img src={github} alt="" className={styles.contactIcon} />
