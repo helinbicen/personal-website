@@ -15,8 +15,8 @@ function setupEventListener(eventName) {
   });
 }
 
-const contactClickEventName = "trigger-contact-link-click";
-const resumeClickEventName = "get_resume_trigger";
+const contactClickEventName = "click-contact-links";
+const resumeClickEventName = "get_resume";
 
 setupEventListener(contactClickEventName);
 setupEventListener(resumeClickEventName);
