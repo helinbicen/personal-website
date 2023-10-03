@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    const customEvent = new CustomEvent("click-contact-links", {
+    const customEvent = new CustomEvent("contact-link-click", {
       detail: {
         page: "contact",
         eventData: isLinkClicked,
