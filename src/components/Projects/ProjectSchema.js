@@ -22,8 +22,8 @@ const ProjectSchema = (props) => {
       detail: {
         page: "projects",
         eventData: {
-          inspectedRepo: inspectedRepo,
-          inspectedWebsite: inspectedWebsite,
+          inspectedRepo: repoClicked,
+          inspectedWebsite: websiteClicked,
         },
       },
     });
