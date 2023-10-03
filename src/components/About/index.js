@@ -14,7 +14,7 @@ const About = () => {
   };
 
   useEffect(() => {
-    const customEvent = new CustomEvent("download-resume", {
+    const customEvent = new CustomEvent("get_resume", {
       detail: {
         page: "contact",
         eventData: {
