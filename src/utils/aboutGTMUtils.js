@@ -16,3 +16,6 @@ function setupEventListener(eventName) {
 
 const resumeClickEventName = "download-resume";
 setupEventListener(resumeClickEventName);
+
+
+export { sendCustomEventToGtm, setupEventListener };
