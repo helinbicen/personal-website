@@ -20,11 +20,6 @@ const contactClickEventName = "contact-link-click";
 
 setupEventListener(contactClickEventName);
 
-// about page
-
-const resumeClickEventName = "download-resume";
-setupEventListener(resumeClickEventName);
-
 // projects page
 
 const inspectProjectsEventName = "inspect-projects";
