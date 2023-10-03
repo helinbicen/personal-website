@@ -29,7 +29,7 @@ const ProjectSchema = (props) => {
     });
 
     document.dispatchEvent(customEvent);
-  }, [inspectedRepo, inspectedWebsite]);
+  }, [repoClicked, websiteClicked]);
 
   return (
     <div className={styles.projects}>
