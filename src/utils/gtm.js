@@ -24,3 +24,8 @@ setupEventListener(contactClickEventName);
 
 const inspectProjectsEventName = "inspect-projects";
 setupEventListener(inspectProjectsEventName);
+
+// about page
+
+const resumeClickEventName = "download-resume";
+setupEventListener(resumeClickEventName);
