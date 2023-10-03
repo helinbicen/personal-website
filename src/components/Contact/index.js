@@ -15,12 +15,6 @@ const Contact = () => {
     github: false,
   });
 
-  const contactPageData = {
-    event: "contact-link-click",
-    page: "contact",
-    controlLinkClicks: isLinkClicked,
-  };
-
   useEffect(() => {
     const customEvent = new CustomEvent("contact-link-click", {
       detail: {

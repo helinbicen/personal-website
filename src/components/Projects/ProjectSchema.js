@@ -9,19 +9,12 @@ const ProjectSchema = (props) => {
   const showWebsite = props.showWebsite;
   const projectName = props.name;
 
-  const projectsPageData = {
-    event: "inspect-projects",
-    page: "projects",
-    projectName: projectName,
-    inspectedWebsite: websiteClicked,
-    inspectedRepo: repoClicked,
-  };
-
   useEffect(() => {
     const customEvent = new CustomEvent("inspect-projects", {
       detail: {
         page: "projects",
         eventData: {
+          projectName: projectName,
           inspectedRepo: repoClicked,
           inspectedWebsite: websiteClicked,
         },

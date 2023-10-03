@@ -6,12 +6,6 @@ import { useState, useEffect } from "react";
 const About = () => {
   const [isResumeDownloaded, setIsResumeDownloaded] = useState(false);
 
-  const aboutPageData = {
-    event: "download-resume",
-    page: "about",
-    isResumeDownloaded: isResumeDownloaded,
-  };
-
   useEffect(() => {
     const customEvent = new CustomEvent("download-resume", {
       detail: {
