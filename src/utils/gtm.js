@@ -1,5 +1,3 @@
-// globalEventListener.js
-
 function sendCustomEventToGTM(eventName, page, eventData) {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
@@ -9,17 +7,20 @@ function sendCustomEventToGTM(eventName, page, eventData) {
   });
 }
 
-
-
 function setupEventListener(eventName) {
   document.addEventListener(eventName, (event) => {
-    // Gelen event'i dinleyerek GTM'e veri gönder
+    // listen to the event & send it to GTM
     sendCustomEventToGTM(eventName, event.detail.page, event.detail.eventData);
   });
 }
 
-// Event adını dinamik bir şekilde belirleyebilirsiniz
-const customEventName = 'contact-link-click';
+// contact page
 
-// Event listener'ı ayarla
-setupEventListener(customEventName);
+const contactClickEventName = "contact-link-click";
+
+setupEventListener(contactClickEventName);
+
+// about page
+
+const resumeClickEventName = "download-resume";
+setupEventListener(resumeClickEventName);

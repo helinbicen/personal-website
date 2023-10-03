@@ -30,7 +30,6 @@ const Contact = () => {
       },
     });
 
-    // Otomatik olarak eventi tetikle
     document.dispatchEvent(customEvent);
   }, [isLinkClicked]);
 
