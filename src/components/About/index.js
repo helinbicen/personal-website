@@ -2,26 +2,22 @@ import styles from "./index.module.css";
 import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
 import Resume from "../../assets/files/Helin_Bicen_Resume.pdf";
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 const About = () => {
   const [isResumeDownloaded, setIsResumeDownloaded] = useState(false);
 
-  const location = useLocation();
-
   useEffect(() => {
-    if (location.href == "https://helinbicen.netlify.app/#about") {
-      const customEvent = new CustomEvent("download-resume", {
-        detail: {
-          page: "about",
-          eventData: {
-            isResumeDownloaded: isResumeDownloaded,
-          },
+    const customEvent = new CustomEvent("download-resume", {
+      detail: {
+        page: "about",
+        eventData: {
+          isResumeDownloaded: isResumeDownloaded,
         },
-      });
-      // Otomatik olarak eventi tetikle
-      document.dispatchEvent(customEvent);
-    }
+      },
+    });
+
+    // Otomatik olarak eventi tetikle
+    document.dispatchEvent(customEvent);
   }, [isResumeDownloaded]);
 
   return (

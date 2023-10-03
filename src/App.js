@@ -1,5 +1,6 @@
 import "./App.css";
 import "./utils/gtm";
+import "./utils/aboutGTMUtils"
 
 import { Routes, Route } from "react-router-dom";
 
