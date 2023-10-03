@@ -10,7 +10,7 @@ const About = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname == "/") {
+    if (location.href == "https://helinbicen.netlify.app/#about") {
       const customEvent = new CustomEvent("download-resume", {
         detail: {
           page: "about",
