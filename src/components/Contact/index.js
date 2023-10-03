@@ -6,7 +6,6 @@ import location from "../../assets/contact/location.png";
 import github from "../../assets/contact/github.svg";
 
 import { useState, useEffect } from "react";
-import { pushDataToDataLayer } from "../../utils/gtm";
 
 const Contact = () => {
   const [isLinkClicked, setIsLinkClicked] = useState({

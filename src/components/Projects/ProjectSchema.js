@@ -1,9 +1,7 @@
 import styles from "./index.module.css";
-import { pushDataToDataLayer } from "../../utils/gtm";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProjectSchema = (props) => {
-
   const [repoClicked, setIsRepoClicked] = useState(false);
   const [websiteClicked, setIsWebsiteClicked] = useState(false);
 
@@ -18,6 +16,20 @@ const ProjectSchema = (props) => {
     inspectedWebsite: websiteClicked,
     inspectedRepo: repoClicked,
   };
+
+  useEffect(() => {
+    const customEvent = new CustomEvent("inspect-projects", {
+      detail: {
+        page: "projects",
+        eventData: {
+          inspectedRepo: inspectedRepo,
+          inspectedWebsite: inspectedWebsite,
+        },
+      },
+    });
+
+    document.dispatchEvent(customEvent);
+  }, [inspectedRepo, inspectedWebsite]);
 
   return (
     <div className={styles.projects}>
@@ -56,9 +68,6 @@ const ProjectSchema = (props) => {
                       href={`${props.repoLink}`}
                       onClick={() => {
                         setIsRepoClicked(true);
-                        setTimeout(() => {
-                          pushDataToDataLayer(projectsPageData);
-                        }, 2000);
                       }}
                     >
                       {props.repoButtonText}
@@ -80,9 +89,6 @@ const ProjectSchema = (props) => {
                       href={`${props.websiteLink}`}
                       onClick={() => {
                         setIsWebsiteClicked(true);
-                        setTimeout(() => {
-                          pushDataToDataLayer(projectsPageData);
-                        }, 2000);
                       }}
                     >
                       {props.websiteButtonText}

@@ -2,7 +2,6 @@ import styles from "./index.module.css";
 import MeAbout from "../../assets/my-photos/MeAbout.jpeg";
 import Resume from "../../assets/files/Helin_Bicen_Resume.pdf";
 import { useState, useEffect } from "react";
-import { pushDataToDataLayer } from "../../utils/gtm";
 
 const About = () => {
   const [isResumeDownloaded, setIsResumeDownloaded] = useState(false);
@@ -16,7 +15,7 @@ const About = () => {
   useEffect(() => {
     const customEvent = new CustomEvent("download-resume", {
       detail: {
-        page: "contact",
+        page: "about",
         eventData: {
           isResumeDownloaded: isResumeDownloaded,
         },
