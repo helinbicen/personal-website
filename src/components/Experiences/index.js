@@ -19,9 +19,9 @@ const Experiences = () => {
             </div>
             <div className={styles.description}>
               As a frontend developer at Turkish Airlines Technology, I
-              specialize in utilizing technologies such as Vue, Knockout,
-              jQuery, and Sass. Working simultaneously on multiple projects, my
-              role involves creating dynamic and user-friendly interfaces. I
+              specialize in utilizing technologies such as React, Vue, jQuery,
+              Bootstrap, and Sass. Working simultaneously on multiple projects,
+              my role involves creating dynamic and user-friendly interfaces. I
               collaborate with cross-functional teams to implement innovative
               features, optimize performance, and ensure a seamless user
               experience. Through my expertise in these technologies, I
