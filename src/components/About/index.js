@@ -15,8 +15,6 @@ const About = () => {
         },
       },
     });
-
-    // Otomatik olarak eventi tetikle
     document.dispatchEvent(customEvent);
   }, [isResumeDownloaded]);
 

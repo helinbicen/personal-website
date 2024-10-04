@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 60rem;
   height: 100vh;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .redirect > img {
-  bottom: 2rem;
+  inset-block-end: 2rem;
   width: 1.75rem;
   height: 1.1rem;
   position: absolute;
@@ -82,10 +82,10 @@
 @keyframes MoveUpDown {
   0%,
   100% {
-    bottom: 1rem;
+    inset-block-end: 1rem;
   }
   50% {
-    bottom: 2rem;
+    inset-block-end: 2rem;
   }
 }
 

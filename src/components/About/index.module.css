@@ -11,7 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 60rem;
+  height: 95vh;
 }
 
 .content {
@@ -31,7 +32,7 @@
   flex-direction: column;
   width: 100%;
   flex: 1;
-  height: 510px;
+  height: 25.5rem;
   gap: 1rem;
 }
 
@@ -62,9 +63,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 220px;
-  height: 45px;
-  border-radius: 5px;
+  width: 11rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
   color: white;
   font-size: 1rem;
   background-color: #0a192f;
@@ -84,7 +85,7 @@ a {
   flex-direction: column;
   width: 100%;
 
-  height: 510px;
+  height: 25.5rem;
   flex: 1;
 }
 
@@ -92,9 +93,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 270px;
-  border-radius: 5px;
+  width: 13.5rem;
+  height: 13.5rem;
+  border-radius: 0.25rem;
   transition: 0.5s all ease-in-out;
 }
 
@@ -105,30 +106,29 @@ a {
 .lineOne {
   position: relative;
   border-bottom: 1px solid black;
-  border-radius: 3px;
-  width: 323px;
-  border: 3px solid #f8f41a;
+  border-radius: 0.15rem;
+  width: 16.15rem;
+  border: 0.15rem solid #f8f41a;
   background-color: #f8f41a;
   transform: rotate(90.19deg);
-  left: 200px;
-  bottom: 140px;
+  inset-inline-start: 10rem;
+  bottom: 7rem;
 }
 
 .lineTwo {
   position: relative;
-  border-radius: 3px;
+  border-radius: 0.15rem;
   border-bottom: 1px solid black;
-  width: 323px;
-  border: 3px solid #f8f41a;
+  width: 16.15rem;
+  border: 0.15rem solid #f8f41a;
   background-color: #f8f41a;
-  top: 50px;
+  inset-block-start: 2.5rem;
 }
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
   .aboutContainer {
     height: 100vh;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -177,12 +177,12 @@ a {
   }
 
   .lineTwo {
-    top: 30px;
+    inset-inline-start: 1.5rem;
   }
 
   .lineOne {
-    left: 180px;
-    bottom: 130px;
+    inset-inline-start: 9rem;
+    inset-block-end: 6.5rem;
   }
 }
 
@@ -196,12 +196,13 @@ a {
   }
 
   .lineTwo {
-    top: 30px;
+    inset-block-start: 1.5rem;
+    inset-inline-start: 0;
   }
 
   .lineOne {
-    left: 180px;
-    bottom: 130px;
+    inset-inline-start: 9rem;
+    inset-block-end: 6.5rem;
   }
 }
 
@@ -215,7 +216,7 @@ a {
 
   .aboutContainer {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
 
@@ -240,8 +241,8 @@ a {
   }
 
   .getResume {
-    width: 150px;
-    height: 36px;
+    width: 7.5rem;
+    height: 1.8rem;
     font-size: 0.8rem;
   }
 
@@ -250,18 +251,18 @@ a {
   }
 
   .photoContainer > img {
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
   }
 
   .lineTwo {
-    width: 250px;
-    top: 30px;
+    width: 12.5rem;
+    inset-block-start: 1.5rem;
   }
 
   .lineOne {
-    width: 250px;
-    left: 130px;
-    bottom: 100px;
+    width: 12.5rem;
+    inset-inline-start: 6.5rem;
+    inset-block-end: 5rem;
   }
 }
