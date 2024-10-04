@@ -5,8 +5,6 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  /* margin-top: 64px; */
-  /* background-color: green; */
   position: relative;
 }
 
@@ -16,7 +14,6 @@
   justify-content: center;
   width: 1200px;
   height: 100vh;
-  /* background-color: #181818; */
 }
 
 .content {
@@ -25,23 +22,21 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  /* background-color: aqua; */
 }
 
 .photo {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: whitesmoke; */
   margin-bottom: 2.5rem;
   cursor: pointer;
 }
 
 .photo > img {
-  width: 250px;
-  height: 250px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 0.25rem solid #fff;
   transition: 0.5s all ease-in-out;
 }
 
@@ -55,7 +50,6 @@
   justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
-  /* background-color: pink; */
   width: 100%;
 }
 
@@ -67,33 +61,33 @@
   gap: 0.5rem;
   font-size: 1rem;
   color: #dadada;
-  /* background-color: purple; */
 }
 
 .redirect {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
 .redirect > img {
   bottom: 2rem;
-  width: 32px;
-  height: 22px;
+  width: 1.75rem;
+  height: 1.1rem;
   position: absolute;
   animation: MoveUpDown 1s linear infinite;
 }
 
 @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 20px;
-    }
-    50% {
-      bottom: 40px;
-    }
+  0%,
+  100% {
+    bottom: 1rem;
   }
+  50% {
+    bottom: 2rem;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .home {
@@ -101,8 +95,6 @@
   }
   .homeContainer {
     width: 100%;
-    /* height: 80vh; */
-   
   }
 }
 
@@ -124,14 +116,12 @@
 @media screen and (max-width: 768px) {
   .homeContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 }
 
 @media screen and (max-width: 576px) {
   .homeContainer {
     width: 100%;
-    /* height: 100vh; */
   }
 
   .photo > img {
@@ -147,19 +137,3 @@
     font-size: 0.8rem;
   }
 }
-
-/* @media screen and (max-width: 576px) {
-   
-}
-  
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 992px) { 
-    
-}
-  
-@media screen and (max-width: 1200px) {
-
-} */

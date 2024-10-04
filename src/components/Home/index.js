@@ -25,7 +25,7 @@ const Home = () => {
                     3000,
                     "",
                     500,
-                    "Data Analyst",
+                    "UI/UX Designer",
                     3000,
                     "",
                     500,
@@ -40,9 +40,6 @@ const Home = () => {
               <h3 className={styles.descriptionItem}>
                 Computer Engineering Student 💻
               </h3>
-              <h3 className={styles.descriptionItem}>Software Developer 🚀</h3>
-              <h3 className={styles.descriptionItem}>UI/UX Enthusiast 😍</h3>
-              <h3 className={styles.descriptionItem}>Freelancer 👩‍💻</h3>
             </div>
           </div>
         </div>
